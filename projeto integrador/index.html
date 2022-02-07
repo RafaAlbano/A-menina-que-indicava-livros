@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>A menina que indicava livros</h1>
+        <div id="myCarousel" class="carousel slide mt-4">
+  
+            <ul class="carousel-indicators">
+              <li class="item1 active"></li>
+              <li class="item2"></li>
+              <li class="item3"></li>
+              <li class="item4"></li>
+            </ul>
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="c1.jpeg" class="imagem_carousel">
+              </div>
+              <div class="carousel-item">
+                <img src="c2.jpeg" class="imagem_carousel">
+              </div>
+              <div class="carousel-item">
+                <img src="c3.jpeg" class="imagem_carousel">
+              </div>
+              <div class="carousel-item">
+                <img src="c4.jpeg" class="imagem_carousel">
+              </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#myCarousel">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+          </div>
+          
+          <script>
+          $(document).ready(function(){
+            
+            $("#myCarousel").carousel({interval: 3500, pause: "hover"});
+            $(".item1").click(function(){
+              $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function(){
+              $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function(){
+              $("#myCarousel").carousel(2);
+            });
+            $(".item3").click(function(){
+              $("#myCarousel").carousel(3);
+            });
+              
+            $(".carousel-control-prev").click(function(){
+              $("#myCarousel").carousel("prev");
+            });
+            $(".carousel-control-next").click(function(){
+              $("#myCarousel").carousel("next");
+            });
+          });
+          </script>
+        <nav class="menu">
+            <a href="fantasia.html">Fantasia</a>
+            <a href="romance.html">Romance</a>
+            <a href="suspense.html">Suspense</a>
+            <a href="ficção.html">Ficção</a>
+            <a href="maisfamosos.html">Top livros mais lidos entre adolescentes</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+            <img src="narnia.jpeg" alt="Capa do livro Crônicas de Nárnia" class="imagem_esquerda">
+            </div>
+            <div class="texto_meio">
+            <h2>Você sabia?</h2>
+            <p>O papel de Lílian Potter , mãe de Harry Potter ,foi oferecido à escritora j.k Rowling, mas a escritora recusou a oferta.
+            </p>
+            <p>Corte de Espinhos e Rosas foi a segunda série de Sarah, é uma releitura de a Bela a Fera.</p>
+            <p>J.K. Rowling, autora de “Harry Potter”, escreveu todos os livros da saga à mão. Por falar em Harry Potter, Os três livros mais lidos no mundo são: a Bíblia, “O Livro Vermelho”, de Mao Tsé-Tung, e “Harry Potter”.</p>
+            <p>Nos livros de Sherlock Holmes o protagonista nunca chega a dizer a célebre frase "Elementar, meu caro Watson!", pela qual é internacionalmente conhecido.</p>
+            <p>Ler prolonga a vida, as pessoas que dedicam pelo menos 30 minutos do seu dia a ler livros vivem mais tempo em comparação com aquelas que não leem. O estudo foi produzido por 3 investigadores da Yale University School of Public Health</p>
+            </div>
+            <div>
+            <img src="cortesdeespinhoserosas.jpeg" alt="Capa do livro Corte de espinhos e rosas" class="imagem_direita">
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="aseleção.jpeg" alt="Capa do livro A seleção" class="imagem_esquerda">
+            </div>
+            <div class="texto_meio">
+                <h2>Booktok</h2>
+                <p>Você conhece o BookTok? O lado literário do TikTok (aplicativo mais baixado em 2020) é como se fosse um grande grupo de leitura on-line. A hashtag #booktok já conta com 6,5 bilhões de visualizações, onde criadores de conteúdos dão recomendações de seus livros favoritos e falam sobre os livros que os fizeram chorar, dar gargalhadas ou sofrer por dias. Veja, aqui, 3 livros que estão fazendo sucesso no BookTok.
+                </p>
+                <p>VERMELHO, BRANCO E SANGUE AZUL, DE CASEY MCQUISTON: Esse new adult ganhou popularidade por ser um romance de leitura leve, engraçada e com aquela relação hate to love queridinha pelos leitores.</p>
+                <p>CORTE DE ESPINHOS E ROSAS, DE SARAH J. MAAS: Mais conhecido no BookTok pela sigla “Acotar”, Corte de Espinhos e Rosas é o primeiro livro de uma série de romances de fantasia para adultos: “Depois de anos sendo escravizados pelas fadas, os humanos conseguiram se libertar e coexistem com seres místicos.”</p>
+                <p>OS 7 MARIDOS DE EVELYN HUGO, DE TAYLOR JENKINS REID: Dizer que esse livro foi feito para as almas fofoqueiras talvez seria raso demais, mas não deixa de ser verdade. Nessa trama apaixonante, a estrela de cinema Evelyn Hugo decide contar toda a sua história de vida para a jornalista Monique Grant, depois de passar anos sem se dirigir à imprensa.</p>
+            </div>
+            <div>
+            <img src="harrypotter.jpeg" alt="Capa do livro Harry Potter" class="imagem_direita">
+            </div>
+        </section>
+        <section>
+            <div>
+                <img src="mentirosos.jpeg" alt="Capa do livro Mentirosos" class="imagem_esquerda">
+            </div>
+            <div class="texto_meio">
+                <h2>Importância da leitura</h2>
+                <p> A leitura estimula o raciocínio, melhora o vocabulário, aprimora a capacidade interpretativa, além de proporcionar ao leitor um conhecimento amplo e diversificado sobre vários assuntos. </p>
+                <p>Ler desenvolve a criatividade, a imaginação, a comunicação, o senso crítico, e amplia a habilidade na escrita.</p>
+                <p>A criação do hábito de leitura, especialmente quando se inicia durante a infância, proporciona desenvolvimento emocional e intelectual, enriquece o vocabulário e permite que as crianças desenvolvam senso crítico.</p>
+                <p>A leitura é um exercício que enriquece, exercita o cérebro e colabora com discussões produtivas, nos tornando mais tolerantes as diferencias do mundo.</p>
+            </div>
+            <div>
+                <img src="jogosvorazes.jpeg" alt="Capa do livro Jogos Vorazes" class="imagem_direita">
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
